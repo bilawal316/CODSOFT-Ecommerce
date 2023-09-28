@@ -4,8 +4,9 @@
 
 @layer components {
   .navButton {
-    @apply px-6 py-2 border  border-[#242424] rounded-full uppercase text-xs tracking-widest text-white transition-all hover:border-[#F7A88A] hover:text-[#f7ABBA]/40;
+    @apply px-6 py-2 border  border-white rounded-full uppercase text-xs tracking-widest text-white transition-all hover:border-[#F7A88A] hover:text-[#f7ABBA]/40;
   }
+
 }
 
 

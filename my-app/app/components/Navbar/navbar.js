@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const Navbar = () => {
   return (
     <div>
-      <div className="flex items-center justify-between px-10 py-10">
+      <div className="w-full flex items-center justify-between px-10 py-10">
         <motion.div
           initial={{
             x: -500,
@@ -17,15 +17,23 @@ const Navbar = () => {
           animate={{ x: 0, opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
         >
-          <Link href="/">
-              <Image
-                src="/logo.jpg"
-                alt="Logo"
-                width={40}
-                height={40}
-                className="rounded-full"
-              />
-          </Link>
+         <div className="flex flex-col items-center">
+  <Link href="/">
+  <div className="flex items-center">
+  <Image
+    src="/logo.jpg"
+    alt="Logo"
+    width={40}
+    height={40}
+    className="rounded-full hover:bg-hoverBg cursor-pointer"
+  />
+  <div className="ml-2 navButton">Dukandar <br/> Shandar</div>
+</div>
+
+  </Link>
+</div>
+
+          
         </motion.div>
         <motion.div
          initial={{
